@@ -10,9 +10,9 @@ class CollectionFactory {
 
 	public static function createPDO() {
 		$pdo = PDOBuilder::with()
-						->dsn( 'mysql:dbname=matriz;host=192.168.56.10;' )
+						->dsn( 'mysql:dbname=matriz;host=localhost;' )
 						->username( 'root' )
-						->password( '@Dlink05' )
+						->password( 'root' )
 						->options (array( \PDO::ATTR_STRINGIFY_FETCHES => false, \PDO::ATTR_EMULATE_PREPARES => false ))
 						->modeException()
 						->persistent()

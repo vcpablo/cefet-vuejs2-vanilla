@@ -78,4 +78,8 @@
     }
 </script>
 
-<style scope></style>
+<style scoped>
+    p {
+        color: red;
+    }
+</style>
